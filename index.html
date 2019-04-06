@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="chat-room">
+            <div class="send-to">
+                <h2>在线用户(<span id="userNumber" >0</span>)</h2>
+                <ul id="contact" class="contact-list">
+
+                </ul>
+            </div>
+            <div class="conversation">
+                <div class="header">
+                    <label for="username">昵称:</label>
+                    <input id="username" type="text" placeholder="点击输入用户名" />
+                    <button id="addBtn" class="add">加入聊天室</button>
+                </div>
+                <div class="dialog">
+                    <ul id="msg" class="dialog-content">
+                    
+                    </ul>
+                    <div class="dialog-toolbox">
+                        <button class="btn-express cursor-forbid">☺</button>
+                    </div>
+                    <div class="dialog-input">
+                        <label for="message"></label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    <div class="dialog-footer">
+                        <div class="copyright">
+                            <small>第六小组聊天室</small>
+                        </div>
+                        <div class="btn-group">
+                            <button id="sendBtn" class="btn-send" disabled>发送</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
